@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roy Hameezan R. Roberto | Personal Portfolio</title>
+    <!-- Import Elegant Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <nav>
+        <div class="logo">Portfolio.</div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="section hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Roy Hameezan R. Roberto</h1>
+                <p class="hero-bio">
+                    An Information Technology student specializing in Web & Mobile Application Development. 
+                    Passionate about crafting smooth user experiences, aesthetic UI designs, and functional digital builds.
+                </p>
+
+                <div class="tech-stack">
+                    <span class="badge">React</span>
+                    <span class="badge">Flutter</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Firebase</span>
+                    <span class="badge">CSS3/HTML5</span>
+                </div>
+
+                <!-- Required Hero Button -->
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#services" class="btn btn-secondary">View Services</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <img src="images/profile.png" alt="Roy Hameezan R. Roberto" class="profile-img">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="card about-card">
+            <p>
+                I am an IT student at Bulacan State University currently mastering full-stack web technologies and mobile application frameworks. 
+                My focus lies in building clean, responsive interfaces that deliver intuitive user experiences across desktop and mobile devices.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services / Features Section (3 Items) -->
+    <section id="services" class="section">
+        <h2>Services & Features</h2>
+        <div class="grid-container">
+            <div class="card">
+                <div class="service-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Building responsive, dynamic web applications using modern HTML5, CSS3, JavaScript, and React frameworks.</p>
+            </div>
+            <div class="card">
+                <div class="service-icon">📱</div>
+                <h3>Mobile App Dev</h3>
+                <p>Designing cross-platform mobile solutions using Flutter and Dart with seamless Firebase integration.</p>
+            </div>
+            <div class="card">
+                <div class="service-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Crafting modern user interfaces, wireframes, and glassmorphic designs tailored for desktop and mobile usability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section">
+        <h2>My Hobbies</h2>
+        <div class="grid-container">
+            <div class="card">
+                <img src="images/drawing.jpg" alt="Drawing" class="card-img">
+                <h3>Drawing</h3>
+                <p>Sketching and designing digital or physical art.</p>
+            </div>
+            <div class="card">
+                <img src="images/games.jpg" alt="Gaming" class="card-img">
+                <h3>Playing Video Games</h3>
+                <p>Mobile Legends, Resident Evil, and Geometry Dash</p>
+            </div>
+            <div class="card">
+                <img src="images/anime.jpg" alt="Anime" class="card-img">
+                <h3>Watching Anime</h3>
+                <p>Attack On Titan, One Piece, and Chainsaw Man</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Section -->
+    <section id="travel" class="section">
+        <h2>Travel Experience</h2>
+        <div class="grid-container">
+            <div class="card travel-card">
+                <img src="images/singapore.jpg" alt="Singapore Trip" class="travel-img">
+                <h3>Singapore <img src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag" class="flag-icon"></h3>
+                <p>A vibrant escape packed with iconic landmarks and rich flavors. I explored city highlights like Marina Bay Sands and the landmark Merlion, chased thrills on rides at Universal Studios, and enjoyed authentic, flavorful laksa noodles.</p>
+            </div>
+            <div class="card travel-card">
+                <img src="images/mongolia.jpg" alt="Mongolia Trip" class="travel-img">
+                <h3>Mongolia <img src="https://flagcdn.com/w40/mn.png" alt="Mongolia Flag" class="flag-icon"></h3>
+                <p>An unforgettable journey through a freezing winter wonderland. I explored 'The Red Hero' city of Ulaanbaatar amidst crisp snow, made great new friends, and took on unique winter adventures like camel riding and snow sledding.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="card contact-card">
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent!');">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="4" placeholder="Your Message..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Roy Hameezan R. Roberto. All rights reserved.</p>
+    </footer>
+
+    <!-- Image Zoom Modal -->
+    <div id="image-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Zoomed view">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
